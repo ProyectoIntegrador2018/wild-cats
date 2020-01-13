@@ -39,6 +39,7 @@ This is the repository for "Instructor Interactivo de AFA"
 | jQuery | 3.4.0|
 | HTML | 5.0 |
 | CSS | 3.0 |
+| Node.js | 12.14.1 |
 
 ### Management tools
 
