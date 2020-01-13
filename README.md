@@ -7,8 +7,8 @@ This is the repository for "Instructor Interactivo de AFA"
 * [Client Details](#client-details)
 * [Environment URLS](#environment-urls)
 * [Da Team](#team)
-* [Management tools](#management-tools)
 * [Technology Stack](#technology-stack)
+* [Management tools](#management-tools)
 
 
 ### Client Details
