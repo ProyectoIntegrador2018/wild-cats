@@ -26,3 +26,25 @@ h5 {
 .form-group.row label {
     padding-right: 10px;
 }
+
+#afamodal .modal-body h5 {
+    border-bottom: 1px solid grey;
+    margin-bottom: 30px;
+}
+
+#afamodal .modal-body .form-group {
+    max-width: 360px;
+    margin-bottom: 60px;
+}
+
+#afamodal .modal-dialog {
+    max-width: 1080px;
+}
+
+#afamodal .table thead th {
+    border-top: 0;
+}
+
+#afamodal .table {
+    margin-bottom: 50px;
+}
