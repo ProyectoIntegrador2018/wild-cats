@@ -1,0 +1,14 @@
+body, input, textarea, button {
+  text-transform: uppercase;
+}
+
+.main_button {
+  margin-right: 1rem;
+}
+
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1em;
+}
