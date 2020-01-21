@@ -63,3 +63,8 @@
 .fa-info-circle {
     color: #76A8D5;
 }
+.underline-border {
+    border-style:  solid;
+    border-color: lightgray;
+    border-width: 0 0 1px 0;
+    }
