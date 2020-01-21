@@ -2,117 +2,124 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/3f8b4025c0.js" crossorigin="anonymous"></script>
     <title>AFA</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar navbar-light bg-light d-flex justify-content-between">
       <div class="">
-        profile_picture
+        <i class="fas fa-user"></i>
       </div>
-      <div class="">
+      <div class="d-flex flex-row">
         <div class="">
           APM / Análisis de falla (AFA) / Consulta / Edición AFA #1234567890
         </div>
-        <div class="">
-          ···
-        </div>
+          <i class="fas fa-ellipsis-v ml-sm-2"></i>
       </div>
     </nav>
-    <section class="top_section">
+    <section class="top_section d-inline-flex flex-row justify-content-between">
       <div class="sections">
-        <button type="button" name="button_contexto" class="section_button">
-          <img src="" alt="">
-          <span>CONTEXTO</span>
-        </button>
-        <button type="button" name="button_analisis" class="section_button">
-          <img src="" alt="">
+        <a href="#" class="section_button color_contexto d-inline-flex flex-column align-items-center justify-content-between">
+          <img src="assets/contexto.png" alt="" style="height: 2.5rem;">
+          <span class="">
+            CONTEXTO
+          </span>
+        </a>
+
+        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_analisis">
+          <img src="assets/analisis.png" alt="" style="height: 2.5rem;">
           <span>ANÁLISIS</span>
-        </button>
-        <button type="button" name="button_diagnostico" class="section_button">
-          <img src="" alt="">
+        </a>
+        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_diagnostico">
+          <img src="assets/diagnostico.png" alt="" style="height: 2.5rem;">
           <span>DIAGNÓSTICO</span>
-        </button>
-        <button type="button" name="button_acciones" class="section_button">
-          <img src="" alt="">
+        </a>
+        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_acciones">
+          <img src="assets/acciones.png" alt="" style="height: 2.5rem;">
           <span>ACCIONES</span>
-        </button>
-        <button type="button" name="button_eficacia" class="section_button">
-          <img src="" alt="">
+        </a>
+        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_eficacia">
+          <img src="assets/eficacia.png" alt="" style="height: 2.5rem;">
           <span>EFICACIA</span>
-        </button>
+        </a>
       </div>
-      <div class="progress_section">
-        <div class="progress_bars">
-          <span class="progress_bar green"></span>
-          <span class="progress_bar green"></span>
-          <span class="progress_bar yellow"></span>
-          <span class="progress_bar"></span>
-          <span class="progress_bar"></span>
-          <span class="progress_bar"></span>
+      <div class="progress_section d-inline-flex flex-column justify-content-around align-items-start">
+        <div class="progress_bars d-inline-flex">
+          <div class="progress_bar green"></div>
+          <div class="progress_bar green"></div>
+          <div class="progress_bar yellow"></div>
+          <div class="progress_bar"></div>
+          <div class="progress_bar"></div>
+          <div class="progress_bar"></div>
         </div>
-        <div class="">
+        <div class="d-inline-flex">
           PENDIENTE DE APROBACIÓN
         </div>
       </div>
     </section>
-    <section>
-      <div class="section_title_bar">
-        <div class="icon color_contexto">
-          <img src="" alt="">
+
+      <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
+        <div class="d-flex flex-row align-items-center justify-content-start">
+          <div class="icon d-flex align-items-center justify-content-center color_contexto">
+            <img src="assets/contexto.png" alt="" style="height: 1.5rem;">
+          </div>
+          <h3 class="title">
+            Contexto de la falla
+          </h3>
         </div>
-        <h3 class="title">
-          Contexto de la falla
-        </h3>
-        <img src="chevron-down.png" alt="">
+        <i class="fas fa-chevron-down"></i>
       </div>
-    </section>
-    <section>
-      <div class="section_title_bar">
-        <div class="icon color_analisis">
-          <img src="" alt="">
+
+      <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
+        <div class="d-flex flex-row align-items-center justify-content-start">
+          <div class="icon d-flex align-items-center justify-content-center color_analisis">
+            <img src="assets/analisis.png" alt="" style="height: 1.5rem;">
+          </div>
+          <h3 class="title">
+            Análisis de causas
+          </h3>
         </div>
-        <h3 class="title">
-          Análisis de causas
-        </h3>
-        <img src="chevron-down.png" alt="">
+        <i class="fas fa-chevron-down"></i>
       </div>
-    </section>
-    <section>
-      <div class="section_title_bar">
-        <div class="icon color_diagnostico">
-          <img src="" alt="">
+
+      <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
+        <div class="d-flex flex-row align-items-center justify-content-start">
+          <div class="icon d-flex align-items-center justify-content-center color_diagnostico">
+            <img src="assets/diagnostico.png" alt="" style="height: 1.5rem;">
+          </div>
+          <h3 class="title">
+            Diagnóstico
+          </h3>
         </div>
-        <h3 class="title">
-          Diagnóstico
-        </h3>
-        <img src="chevron-down.png" alt="">
+        <i class="fas fa-chevron-down"></i>
       </div>
-    </section>
-    <section>
-      <div class="section_title_bar">
-        <div class="icon color_acciones">
-          <img src="" alt="">
+
+      <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
+        <div class="d-flex flex-row align-items-center justify-content-start">
+          <div class="icon d-flex align-items-center justify-content-center color_acciones">
+            <img src="assets/acciones.png" alt="" style="height: 1.5rem;">
+          </div>
+          <h3 class="title">
+            Acciones de mejora
+          </h3>
         </div>
-        <h3 class="title">
-          Acciones de mejora
-        </h3>
-        <img src="chevron-down.png" alt="">
+        <i class="fas fa-chevron-down"></i>
       </div>
-    </section>
-    <section>
-      <div class="section_title_bar">
-        <div class="icon color_eficacia">
-          <img src="" alt="">
+
+      <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
+        <div class="d-flex flex-row align-items-center justify-content-start">
+          <div class="icon d-flex align-items-center justify-content-center color_eficacia">
+            <img src="assets/eficacia.png" alt="" style="height: 1.5rem;">
+          </div>
+          <h3 class="title">
+            Verificación de eficacia
+          </h3>
         </div>
-        <h3 class="title">
-          Verificación de eficacia
-        </h3>
-        <img src="chevron-down.png" alt="">
+        <i class="fas fa-chevron-down"></i>
       </div>
-    </section>
   </body>
 </html>
