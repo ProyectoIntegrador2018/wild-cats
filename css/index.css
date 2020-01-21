@@ -7,7 +7,7 @@ body, input, textarea, button {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1em;
   margin: 0;
 }
 
@@ -71,6 +71,10 @@ a.section_button {
 
 section {
   width: 100%;
+}
+
+div.section {
+  margin: 0 1rem;
 }
 .section_title_bar .icon {
   width: 2rem;
@@ -153,3 +157,10 @@ section {
     border-color: lightgray;
     border-width: 0 0 1px 0;
     }
+input[type=text] + input[type=text] {
+  margin-left: 0.5rem;
+}
+
+.main_button {
+  margin-bottom: 1rem;
+}
