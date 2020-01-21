@@ -1,14 +1,153 @@
-<div class="section" id="acciones-mejora"></div>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="https://kit.fontawesome.com/3f8b4025c0.js" crossorigin="anonymous"></script>
+    <title>AFA</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light d-flex justify-content-between">
+      <div class="">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="d-flex flex-row">
+        <div class="">
+          APM / Análisis de falla (AFA) / Consulta / Edición AFA #1234567890
+        </div>
+          <i class="fas fa-ellipsis-v ml-sm-2"></i>
+      </div>
+    </nav>
+    <section class="top_section d-inline-flex flex-row justify-content-between">
+      <div class="sections">
+        <a href="#" class="section_button color_contexto d-inline-flex flex-column align-items-center justify-content-between">
+          <img src="assets/contexto.png" alt="" style="height: 2.5rem;">
+          <span class="">
+            CONTEXTO
+          </span>
+        </a>
 
-<div class="section" id="verificacion-eficacia"></div>
+        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_analisis">
+          <img src="assets/analisis.png" alt="" style="height: 2.5rem;">
+          <span>ANÁLISIS</span>
+        </a>
+        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_diagnostico">
+          <img src="assets/diagnostico.png" alt="" style="height: 2.5rem;">
+          <span>DIAGNÓSTICO</span>
+        </a>
+        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_acciones">
+          <img src="assets/acciones.png" alt="" style="height: 2.5rem;">
+          <span>ACCIONES</span>
+        </a>
+        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_eficacia">
+          <img src="assets/eficacia.png" alt="" style="height: 2.5rem;">
+          <span>EFICACIA</span>
+        </a>
+      </div>
+      <div class="progress_section d-inline-flex flex-column justify-content-around align-items-start">
+        <div class="progress_bars d-inline-flex">
+          <div class="progress_bar green"></div>
+          <div class="progress_bar green"></div>
+          <div class="progress_bar yellow"></div>
+          <div class="progress_bar"></div>
+          <div class="progress_bar"></div>
+          <div class="progress_bar"></div>
+        </div>
+        <div class="d-inline-flex">
+          PENDIENTE DE APROBACIÓN
+        </div>
+      </div>
+    </section>
 
-<div class="section" id="evaluacion-afa"></div>
+    <section>
+        <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
+          <div class="d-flex flex-row align-items-center justify-content-start">
+            <div class="icon d-flex align-items-center justify-content-center color_contexto">
+              <img src="assets/contexto.png" alt="" style="height: 1.5rem;">
+            </div>
+            <h3 class="title">
+              Contexto de la falla
+            </h3>
+            <button class="no-style-btn" type="button" name="button" data-toggle="modal" data-target="#helpModal"> <i class="fas fa-question-circle"></i> </button>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="section" id="contexto-falla"></div>
+    </section>
+    <section>
+        <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
+          <div class="d-flex flex-row align-items-center justify-content-start">
+            <div class="icon d-flex align-items-center justify-content-center color_analisis">
+              <img src="assets/analisis.png" alt="" style="height: 1.5rem;">
+            </div>
+            <h3 class="title">
+              Análisis de causas
+            </h3>
+            <button class="no-style-btn" type="button" name="button" data-toggle="modal" data-target="#helpModal"> <i class="fas fa-question-circle"></i> </button>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="section" id="analisis-seccion"></div>
+    </section>
+    <section>
+        <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
+          <div class="d-flex flex-row align-items-center justify-content-start">
+            <div class="icon d-flex align-items-center justify-content-center color_diagnostico">
+              <img src="assets/diagnostico.png" alt="" style="height: 1.5rem;">
+            </div>
+            <h3 class="title">
+              Diagnóstico
+            </h3>
+            <button class="no-style-btn" type="button" name="button" data-toggle="modal" data-target="#helpModal"> <i class="fas fa-question-circle"></i> </button>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="section" id="diagnostico-seccion"></div>
+    </section>
+    <section>
+        <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
+          <div class="d-flex flex-row align-items-center justify-content-start">
+            <div class="icon d-flex align-items-center justify-content-center color_acciones">
+              <img src="assets/acciones.png" alt="" style="height: 1.5rem;">
+            </div>
+            <h3 class="title">
+              Acciones de mejora
+            </h3>
+            <button class="no-style-btn" type="button" name="button" data-toggle="modal" data-target="#helpModal"> <i class="fas fa-question-circle"></i> </button>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="section" id="acciones-mejora"></div>
 
+    </section>
+    <section>
+        <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
+          <div class="d-flex flex-row align-items-center justify-content-start">
+            <div class="icon d-flex align-items-center justify-content-center color_eficacia">
+              <img src="assets/eficacia.png" alt="" style="height: 1.5rem;">
+            </div>
+            <h3 class="title">
+              Verificación de eficacia
+            </h3>
+            <button class="no-style-btn" type="button" name="button" data-toggle="modal" data-target="#helpModal"> <i class="fas fa-question-circle"></i> </button>
+          </div>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="section" id="verificacion-eficacia"></div>
+    </section>
+    <div class="section" id="evaluacion-afa"></div>
+  </body>
+</html>
 <div class="form-group col-lg">
   <button style="position: fixed;
   bottom: 20px;
-  right: 20px; 
-  type="button" class="btn btn-success float-md-right" data-toggle="modal" data-target="#helpModal">AYUDA</button>
+  right: 20px;
+  color: white;"
+  type="button" class="btn green float-md-right" data-toggle="modal" data-target="#helpModal">AYUDA</button>
 </div>
 
 <!-- HELP MENU MODAL-->
@@ -20,14 +159,14 @@
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">¡Hola! soy tu asistente virtual, ¿qué quieres hacer hoy?</h4>
       </div>
-      <div class="col-md-4 text-center" style="padding-top:25px"> 
-        <button id="singlebutton" name="singlebutton" class="btn btn-secondary">Realizar Tutorial</button> 
+      <div class="col-md-4 text-center" style="padding-top:25px">
+        <button id="singlebutton" name="singlebutton" class="btn btn-secondary">Realizar Tutorial</button>
       </div>
-      <div class="col-md-4 text-center" style="padding-top:25px"> 
-        <button id="singlebutton" name="singlebutton" class="btn btn-secondary">Consultar un significado específico</button> 
+      <div class="col-md-4 text-center" style="padding-top:25px">
+        <button id="singlebutton" name="singlebutton" class="btn btn-secondary">Consultar un significado específico</button>
       </div>
-      <div class="col-md-4 text-center" style="padding-top:25px"> 
-        <button id="singlebutton" name="singlebutton" class="btn btn-secondary">Ver preguntas frecuentes</button> 
+      <div class="col-md-4 text-center" style="padding-top:25px">
+        <button id="singlebutton" name="singlebutton" class="btn btn-secondary">Ver preguntas frecuentes</button>
       </div>
     </div>
 

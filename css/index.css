@@ -1,3 +1,92 @@
+body, input, textarea, button {
+  text-transform: uppercase;
+}
+
+.main_button {
+  margin-right: 1rem;
+}
+
+h3 {
+  font-size: 1em;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: 0.8em;
+}
+
+.color_contexto {
+  background-color: #EB786E;
+}
+.color_analisis {
+  background-color: #5D6D7D;
+}
+.color_diagnostico {
+  background-color: #FDB643;
+}
+.color_acciones {
+  background-color: #A3A3A3;
+}
+.color_eficacia {
+  background-color: #6BA3D0;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.section_button {
+  color: white;
+  width: 5rem;
+  height: 5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.5em;
+  margin: 2rem 0;
+}
+
+.progress_bar {
+  height: 0.5rem;
+  width: 2.5rem;
+  margin-right: 1rem;
+  border-radius: 0.1rem;
+  background-color: #F1F3F6;
+}
+
+.progress_section {
+  margin: 2rem 0;
+}
+
+.green {
+  background-color: #5FD800;
+}
+
+.yellow {
+  background-color: #FDB643;
+}
+
+section {
+  width: 100%;
+}
+
+div.section {
+  margin: 0 1rem;
+}
+.section_title_bar .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.section_title_bar {
+  margin: 1rem;
+  background-color: #F1F3F6;
+  padding-right: 1rem;
+}
 .options {
     text-align: right;
     padding: 20px;
@@ -68,3 +157,20 @@
     border-color: lightgray;
     border-width: 0 0 1px 0;
     }
+input[type=text] + input[type=text] {
+  margin-left: 0.5rem;
+}
+
+.main_button {
+  margin-bottom: 1rem;
+}
+
+.no-style-btn {
+  color: inherit;
+	border: none;
+	margin: 0 1rem;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  background-color: transparent;
+}
