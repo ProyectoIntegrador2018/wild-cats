@@ -1,0 +1,218 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<div>
+    <div class="form-row">
+        <div class="form-group col-lg">
+            
+            <a class="btn btn-secondary" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-line-chart" aria-hidden="true"></i> Análisis de causas
+            </a>
+        </div>
+    </div>
+
+    <form class="collapse" id="collapseExample">
+        <div class="form-row">
+            <div class="form-group col-lg">
+                <button type="button" class="btn btn-secondary float-md-right" data-toggle="modal">SOLICITAR DIAGNOSTICO COLABORADOR</button>
+                <button type="button" class="btn btn-secondary float-md-right" data-toggle="modal"
+                    data-target="#exampleModal">NUEVO ANALISIS</button>
+            </div>
+        </div>
+        <!---MODAL-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Nuevo analisis de causas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group col-lg">
+                            <div class="form-group float-md-left">
+                                <label type="text">HERRAMIENTA</label>
+                            </div>
+                            <div class="form-group float-md-left">
+                                <input type="text" class="form-control" id="inputEmail4">
+                            </div>
+                        </div>
+                        <div class="form-group col-lg float-md-left">
+                                <div class="form-group float-md-left">
+                                        <label type="text">ANÁLISIS</label>
+                                    </div>
+                                    <div class="form-group float-md-left">
+                                        <input type="text" class="form-control" id="inputEmail4">
+                                    </div>
+                        </div>
+                        <div class="form-group col-lg float-md-left">
+                                <div class="form-group float-md-left">
+                                        <label type="text">OBSERVACIONES</label>
+                                    </div>
+                                    <div class="form-group float-md-left">
+                                        <input type="text" class="form-control" id="inputEmail4">
+                                    </div>
+                        </div>
+                        <div class="form-group col-lg float-md-left">
+                            <label>Tipo de causa</label>
+                            <div class="custom-control custom-radio">
+                                <label class="custom-control-label" for="defaultUnchecked">Tecnica</label>
+                                <input type="radio" class="custom-control-input" id="defaultUnchecked"
+                                    name="defaultExampleRadios">
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <label class="custom-control-label" for="defaultUnchecked">No Tecnica</label>
+                                <input type="radio" class="custom-control-input" id="defaultUnchecked"
+                                    name="defaultExampleRadios">
+                            </div>
+                        </div>
+                        <div class="form-group col-lg float-md-left">
+                            <label>Documentos</label>
+                            <div class="form-check">
+                                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-secondary">Grabar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-lg">
+                <legend class="underline-border">Causas Tecnicas</legend>
+                <div class="form-group float-md-right d-inline">
+                    <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="form-group float-md-right d-inline">
+                    <label type="text">Buscar</label>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">HERRAMIENTAS DE ANALISIS<i class="fa fa-fw fa-sort"></i></th>
+                            <th scope="col">ANALISIS<i class="fa fa-fw fa-sort"></i></th>
+                            <th scope="col">OBSERVACIONES<i class="fa fa-fw fa-sort"></i></th>
+                            <th scope="col">FECHA<i class="fa fa-fw fa-sort"></i></th>
+                            <th scope="col">AUTOR<i class="fa fa-fw fa-sort"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ANALISIS GENERICO</td>
+                            <td>TERMOGRAFIA</td>
+                            <td>SE VERIFICO PUNTOS CALIENTES EN FRICCION DE PUERTA...</td>
+                            <td>27-12-2019</td>
+                            <td>GARODRIGUEZ</td>
+                            <td><i class="fa fa-sticky-note"></i><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-lg">
+                <legend class="underline-border">Causas No Tecnicas</legend>
+                <div class="form-group float-md-right d-inline">
+                    <input type="text" class="form-control" id="inputEmail4">
+                </div>
+                <div class="form-group float-md-right d-inline">
+                    <label type="text">Buscar</label>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">HERRAMIENTAS DE ANALISIS <i class="fa fa-fw fa-sort"></i></th>
+                            <th scope="col">ANALISIS<i class="fa fa-fw fa-sort"></i></th>
+                            <th scope="col">OBSERVACIONES<i class="fa fa-fw fa-sort"></i></th>
+                            <th scope="col">FECHA<i class="fa fa-fw fa-sort"></i></th>
+                            <th scope="col">AUTOR<i class="fa fa-fw fa-sort"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <tD>DIAGRAMA CAUSA EFECTO</tD>
+                            <td>POR QUE NO SE PUDO ACTUAR MAS RAPIDO?</td>
+                            <td>FALTA DE GESTION DE PERSONAL POR DIA FESTIVO</td>
+                            <td>09-01-2020</td>
+                            <td>GARODRIGUEZ</td>
+                            <td><i class="fa fa-sticky-note"></i><i class="fa fa-pencil" aria-hidden="true"></i></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="form-row ">
+            <legend class="underline-border">DIAGNOSTICOS COLABORADORES</legend>
+                <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">GRUPO<i class="fa fa-fw fa-sort"></i></th>
+                                <th scope="col">#<i class="fa fa-fw fa-sort"></i></th>
+                                <th scope="col">ESTADO<i class="fa fa-fw fa-sort"></i></th>
+                                <th scope="col">TIPO<i class="fa fa-fw fa-sort"></i></th>
+                                <th scope="col">DESCRIPCION<i class="fa fa-fw fa-sort"></i></th>
+                                <th scope="col">PRIORIDAD<i class="fa fa-fw fa-sort"></i></th>
+                                <th scope="col">PTO. TJO. RESP.<i class="fa fa-fw fa-sort"></i></th>
+                                <th scope="col">FECHA FIN DESEADO<i class="fa fa-fw fa-sort"></i></th>
+                                <th scope="col">PLAZO<i class="fa fa-fw fa-sort"></i></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>55162812</td>
+                                <td>ST</td>
+                                <td>M5</td>
+                                <td>AFA 55162812 NO CIERRAN GUIAS...</td>
+                                <td>ALTA</td>
+                                <td>AM1|110</td>
+                                <td>06-02-2020</td>
+                                <td>CORTO</td>
+                                <td><i class="fa fa-search"></i><i class="fa fa-pencil" aria-hidden="true"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+        </div>
+        <div class="form-row">
+                <!--MODAL-->
+                <div class="modal fade equipo" id="agregarequipo" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Arbol Equipos</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group col-lg">
+                                    <div class="form-group">
+                                        <label type="text">Ubicacion Tecnica</label>
+                                        <input type="text" class="form-control" id="inputEmail4">
+                                    </div>
+                                    <div class="form-group ">
+                                        <button type="button" class="btn btn-primary float-md-right">Buscar</button>                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Grabar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
