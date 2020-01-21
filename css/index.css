@@ -164,3 +164,13 @@ input[type=text] + input[type=text] {
 .main_button {
   margin-bottom: 1rem;
 }
+
+.no-style-btn {
+  color: inherit;
+	border: none;
+	margin: 0 1rem;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  background-color: transparent;
+}
