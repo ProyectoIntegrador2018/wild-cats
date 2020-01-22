@@ -1,0 +1,19 @@
+{
+  "name": "wild-cats",
+  "version": "1.0.0",
+  "description": "This is the repository for \"Instructor Interactivo de AFA\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProyectoIntegrador2018/wild-cats.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ProyectoIntegrador2018/wild-cats/issues"
+  },
+  "homepage": "https://github.com/ProyectoIntegrador2018/wild-cats#readme"
+}
