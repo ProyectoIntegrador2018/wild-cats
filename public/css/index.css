@@ -69,8 +69,15 @@ a.section_button {
   background-color: #FDB643;
 }
 
-.help-color {
+.action-color {
   color: #5FD800;
+}
+
+.help-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: white;
 }
 
 section {
@@ -188,10 +195,10 @@ input[type=text] + input[type=text] {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #c6c2bd;
+  background-color: #EEEEEE;
   overflow-x: hidden;
   transition: 0.6s;
-  padding-top: 60px;
+  padding-top: 4rem;
 }
 
 .sidenav a {
@@ -213,6 +220,67 @@ input[type=text] + input[type=text] {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+p.tutorial-description {
+  text-transform: none;
+  font-size: 0.875em;
+  padding: 1rem 0;
+}
+
+p.tutorial-step {
+  padding: 0.5rem;
+  text-transform: none;
+  font-size: 0.75em;
+}
+
+a.tutorial-section_button {
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  /* border-radius: 0.5rem; */
+  /* font-size: 0.5em; */
+  margin: 1rem 0;
+}
+
+a.color_contexto.active {
+  box-shadow:
+    0 0 0 5px rgba(235, 120, 110, 0.30),
+    0 0 0 10px rgba(235, 120, 110, 0.30);
+}
+
+a.color_analisis.active {
+  box-shadow:
+    0 0 0 5px rgba(93, 109, 125, 0.3),
+    0 0 0 10px rgba(93, 109, 125, 0.3);
+}
+
+a.color_diagnostico.active {
+  box-shadow:
+    0 0 0 5px rgba(253, 182, 67, 0.3),
+    0 0 0 10px rgba(253, 182, 67, 0.3);
+}
+
+a.color_acciones.active {
+  box-shadow:
+    0 0 0 5px rgba(163, 163, 163, 0.3),
+    0 0 0 10px rgba(163, 163, 163, 0.3);
+}
+
+a.color_eficacia.active {
+  box-shadow:
+    0 0 0 5px rgba(107, 163, 208, 0.3),
+    0 0 0 10px rgba(107, 163, 208, 0.3);
+}
+
+.tutorial-section_button + .tutorial-section_button {
+  margin-left: 1rem;
+}
+
+.tutorial-img {
+  width: 100%;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-height: 450px) {
