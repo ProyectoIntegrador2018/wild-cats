@@ -5,4 +5,5 @@ window.onload = function(){
     $('#contexto-falla').load('../_contexto_falla.html');
     $('#diagnostico-seccion').load('../_diagnostico-seccion.html');
     $('#analisis-seccion').load('../_analisis_seccion.html');
+    $('.show-sidebar').load('../_sidebar.html');
 }

@@ -62,7 +62,7 @@
         </div>
       </div>
     </section>
-
+    <div class="section show-sidebar"></div>
     <section>
         <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
           <div class="d-flex flex-row align-items-center justify-content-start">
@@ -72,7 +72,7 @@
             <h3 class="title">
               Contexto de la falla
             </h3>
-            <button class="no-style-btn" type="button" name="button" data-toggle="modal" data-target="#helpModal"> <i class="fas fa-question-circle"></i> </button>
+            <button class="no-style-btn" type="button" name="button" onclick="openNav()"> <i class="fas fa-question-circle help-color"></i> </button>
           </div>
           <i class="fas fa-chevron-down"></i>
         </div>
@@ -87,7 +87,7 @@
             <h3 class="title">
               Análisis de causas
             </h3>
-            <button class="no-style-btn" type="button" name="button" data-toggle="modal" data-target="#helpModal"> <i class="fas fa-question-circle"></i> </button>
+            <button class="no-style-btn" type="button" name="button" onclick="openNav()"> <i class="fas fa-question-circle help-color"></i> </button>
           </div>
           <i class="fas fa-chevron-down"></i>
         </div>
@@ -102,7 +102,7 @@
             <h3 class="title">
               Diagnóstico
             </h3>
-            <button class="no-style-btn" type="button" name="button" data-toggle="modal" data-target="#helpModal"> <i class="fas fa-question-circle"></i> </button>
+            <button class="no-style-btn" type="button" name="button" onclick="openNav()"> <i class="fas fa-question-circle help-color"></i> </button>
           </div>
           <i class="fas fa-chevron-down"></i>
         </div>
@@ -117,7 +117,7 @@
             <h3 class="title">
               Acciones de mejora
             </h3>
-            <button class="no-style-btn" type="button" name="button" data-toggle="modal" data-target="#helpModal"> <i class="fas fa-question-circle"></i> </button>
+            <button class="no-style-btn" type="button" name="button" onclick="openNav()"> <i class="fas fa-question-circle help-color"></i> </button>
           </div>
           <i class="fas fa-chevron-down"></i>
         </div>
@@ -133,7 +133,7 @@
             <h3 class="title">
               Verificación de eficacia
             </h3>
-            <button class="no-style-btn" type="button" name="button" data-toggle="modal" data-target="#helpModal"> <i class="fas fa-question-circle"></i> </button>
+            <button class="no-style-btn" type="button" name="button" onclick="openNav()"> <i class="fas fa-question-circle help-color"></i> </button>
           </div>
           <i class="fas fa-chevron-down"></i>
         </div>
@@ -156,9 +156,9 @@
       bottom: 20px;
       right: 20px;
       color: white;"
-      type="button" class="btn green float-md-right" data-toggle="modal" data-target="#helpModal">AYUDA</button>
+      type="button" class="btn green float-md-right" onclick="openNav()">AYUDA</button>
     </div>
-    
+
     <!-- HELP MENU MODAL-->
     <div id="helpModal" class="modal fade" role="dialog">
       <div class="modal-dialog">
@@ -178,7 +178,7 @@
             <button id="singlebutton" name="singlebutton" class="btn btn-secondary">Ver preguntas frecuentes</button>
           </div>
         </div>
-    
+
       </div>
     </div>
   </body>

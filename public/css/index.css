@@ -69,6 +69,10 @@ a.section_button {
   background-color: #FDB643;
 }
 
+.help-color {
+  color: #5FD800;
+}
+
 section {
   width: 100%;
 }
@@ -215,4 +219,3 @@ input[type=text] + input[type=text] {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
