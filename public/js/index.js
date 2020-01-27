@@ -6,6 +6,8 @@ window.onload = function(){
     $('#diagnostico-seccion').load('../_diagnostico-seccion.html');
     $('#analisis-seccion').load('../_analisis_seccion.html');
     $('.show-sidebar').load('../_sidebar_acciones_mejora.html');
+    $('.show-sidebar').load('../_sidebar.html');
+    $('.show-sidebar-diagnostico').load('../_sidebar_diagnostico.html');
 }
 
 //FUNCIONALIDAD DEL SIDEBAR ACCIONES DE MEJORA

@@ -1,0 +1,45 @@
+<!--BOTON PARA TRIGGER DE SIDEBAR-->
+
+<div id="diagnosticoSidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <div class="d-inline-flex">
+        <a href="#" class="tutorial-section_button color_contexto">
+        </a>
+        <a href="#" class="tutorial-section_button color_analisis">
+        </a>
+        <a href="#" class="tutorial-section_button color_diagnostico active">
+        </a>
+        <a href="#" class="tutorial-section_button color_acciones">
+        </a>
+        <a href="#" class="tutorial-section_button color_eficacia">
+        </a>
+    </div>
+
+    <h3 class="modal-title">Tutorial de sección Diagnostico</h3>
+    <p class="tutorial-description">En esta sección se realizan las conclusiones de los diagnosticos previamente evaluados.</p>
+    <p class="tutorial-step">1. El botón Nuevo Diagnostico permite crear una nueva conclusion a un diagnostico ya hecho. </p>
+    <img src="assets/placeholder.png" alt="" class="tutorial-img">
+    <p class="tutorial-step">2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. </p>
+    <p class="tutorial-step">3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. </p>
+    <!-- <a href="#">CONTENT</a> -->
+    <div class="d-flex flex-row justify-content-around">
+        <a href="#"><i class="fas fa-arrow-left action-color"></i></a>
+        <a href="#"><i class="fas fa-arrow-right action-color"></i></a>
+    </div>
+</div>
+<script>
+    function openNavDiag() {
+        $("body #diagnosticoSidenav").css("width", "300px");
+        $("body #diagnosticoSidenav").css("padding", "4rem 2rem");
+    }
+
+    function closeNavDiag() {
+        $("body #diagnosticoSidenav").css("width", "0");
+        $("body #diagnosticoSidenav").css("padding", "0");
+    }
+
+    $("#seccion-diagnostico .fa-question-circle").parent().click(openNavDiag);
+    $(document).on("click", "#diagnosticoSidenav .closebtn", closeNavDiag);
+</script>
