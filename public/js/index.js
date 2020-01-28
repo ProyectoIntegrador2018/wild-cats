@@ -12,7 +12,18 @@ window.onload = function(){
     $('.show-sidebar').load('../_sidebar.html');
 }
 
-//FUNCIONALIDAD DEL SIDEBAR ACCIONES DE MEJORA
+function openNav() {
+  $("#mySidenav").css("width", "300px");
+  $("#mySidenav").css("padding", "4rem 2rem");
+  $("#main-content").css("padding-right", "300px");
+}
+
+function closeNav() {
+  $("#mySidenav").css("width", "0");
+  $("#mySidenav").css("padding", "0");
+  $("#main-content").css("padding-right", "0");
+}
+
 function openNavAcciones() {
     $("body #mySidenavAcciones").css("width", "300px");
     $("body #mySidenavAcciones").css("padding", "4rem 2rem");
@@ -61,6 +72,8 @@ function closeNavContexto() {
     $("body #main-content").css("padding-right", "0");
 }
 
+$("#main_help_button").click(openNav);
+$(document).on("click", "#mySidenav .closebtn", closeNav);
 
 $("#seccion-contexto .fa-question-circle").parent().click(openNavContexto);
 $(document).on("click", "#context-sidebar .closebtn", closeNavContexto);
