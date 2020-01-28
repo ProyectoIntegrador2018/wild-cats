@@ -1,5 +1,7 @@
 # Instructor Interactivo de AFA
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/467b8a1fd4ec9baf0b99/maintainability)](https://codeclimate.com/github/ProyectoIntegrador2018/wild-cats/maintainability)
+
 This is the repository for "Instructor Interactivo de AFA" 
 
 ## Table of contents
