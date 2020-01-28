@@ -9,6 +9,7 @@ window.onload = function(){
     $('.show-sidebar-diagnostico').load('../_sidebar_diagnostico.html');
     $('.show-sidebar-analisis').load('../_sidebar_analisis_de_causas.html');
     $('.show-sidebar-contexto').load('../_sidebar_contexto.html');
+    $('.show-sidebar-verificacion').load('../_sidebar_verificacion.html');
     $('.show-sidebar').load('../_sidebar.html');
 }
 
@@ -71,6 +72,17 @@ function closeNavContexto() {
     $("body #context-sidebar").css("padding", "0");
     $("body #main-content").css("padding-right", "0");
 }
+function openNavVerificacion() {
+    $("body #verificacionSidenav").css("width", "300px");
+    $("body #verificacionSidenav").css("padding", "4rem 2rem");
+    $("body #main-content").css("padding-right", "300px");
+
+}
+function closeNavVerificacion() {
+    $("body #verificacionSidenav").css("width", "0");
+    $("body #verificacionSidenav").css("padding", "0");
+    $("body #main-content").css("padding-right", "0");
+}
 
 $("#main_help_button").click(openNav);
 $(document).on("click", "#mySidenav .closebtn", closeNav);
@@ -86,3 +98,6 @@ $(document).on("click", "#diagnosticoSidenav .closebtn", closeNavDiag);
 
 $("#seccion-analisis .fa-question-circle").parent().click(openAnalisisNav);
 $(document).on("click", "#analisisSidenav .closebtn", closeAnalisisNav);
+
+$("#seccion-verificacion .fa-question-circle").parent().click(openNavVerificacion);
+$(document).on("click", "#verificacionSidenav .closebtn", closeNavVerificacion);
