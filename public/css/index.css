@@ -57,6 +57,12 @@ a.section_button {
   background-color: #F1F3F6;
 }
 
+
+.btn.menu-btn {
+  color: white;
+  width: 100%
+}
+
 .progress_section {
   margin: 2rem 0;
 }
