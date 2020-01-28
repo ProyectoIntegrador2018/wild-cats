@@ -13,30 +13,30 @@ window.onload = function(){
     $('.show-sidebar').load('../_sidebar.html');
 }
 
-function openNav(block) {
-    $("body " + block).css({"width": "300px", "padding": "4rem 2rem"});
-    $("body #main-content").css("padding-right", "300px");
+function actionNav(block, action) {
+    let width = "0", padding = width;
+    if (action == "open") {
+        width = "300px";
+        padding = "4rem 2rem";
+    }
+    $("body " + block).css({"width": width, "padding": padding});
+    $("body #main-content").css("padding-right", width);
 }
 
-function closeNav(block) {
-    $("body " + block).css({"width": "0", "padding": "0"});
-    $("#main-content").css("padding-right", "0");
-}
+$("#main_help_button").click(() => {actionNav("#mySidenav", "open")});
+$(document).on("click", "#mySidenav .closebtn", () => {actionNav("#mySidenav", "close")});
 
-$("#main_help_button").click(() => {openNav("#mySidenav")});
-$(document).on("click", "#mySidenav .closebtn", () => {closeNav("#mySidenav")});
+$("#seccion-contexto .fa-question-circle").parent().click(() => {actionNav("#context-sidebar", "open")});
+$(document).on("click", "#context-sidebar .closebtn", () => {actionNav("#context-sidebar", "close")});
 
-$("#seccion-contexto .fa-question-circle").parent().click(() => {openNav("#context-sidebar")});
-$(document).on("click", "#context-sidebar .closebtn", () => {closeNav("#context-sidebar")});
+$("#seccion-mejora .fa-question-circle").parent().click(() => {actionNav("#mySidenavAcciones", "open")});
+$(document).on("click", "#mySidenavAcciones .closebtn", () => {actionNav("#mySidenavAcciones", "close")});
 
-$("#seccion-mejora .fa-question-circle").parent().click(() => {openNav("#mySidenavAcciones")});
-$(document).on("click", "#mySidenavAcciones .closebtn", () => {closeNav("#mySidenavAcciones")});
+$("#seccion-diagnostico .fa-question-circle").parent().click(() => {actionNav("#diagnosticoSidenav", "open")});
+$(document).on("click", "#diagnosticoSidenav .closebtn", () => {actionNav("#diagnosticoSidenav", "close")});
 
-$("#seccion-diagnostico .fa-question-circle").parent().click(() => {openNav("#diagnosticoSidenav")});
-$(document).on("click", "#diagnosticoSidenav .closebtn", () => {closeNav("#diagnosticoSidenav")});
+$("#seccion-analisis .fa-question-circle").parent().click(() => {actionNav("#analisisSidenav", "open")});
+$(document).on("click", "#analisisSidenav .closebtn", () => {actionNav("#analisisSidenav", "close")});
 
-$("#seccion-analisis .fa-question-circle").parent().click(() => {openNav("#analisisSidenav")});
-$(document).on("click", "#analisisSidenav .closebtn", () => {closeNav("#analisisSidenav")});
-
-$("#seccion-verificacion .fa-question-circle").parent().click(() => {openNav("#verificacionSidenav")});
-$(document).on("click", "#verificacionSidenav .closebtn", () => {closeNav("#verificacionSidenav")});
+$("#seccion-verificacion .fa-question-circle").parent().click(() => {actionNav("#verificacionSidenav", "open")});
+$(document).on("click", "#verificacionSidenav .closebtn", () => {actionNav("#verificacionSidenav", "close")});
