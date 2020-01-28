@@ -13,91 +13,30 @@ window.onload = function(){
     $('.show-sidebar').load('../_sidebar.html');
 }
 
-function openNav() {
-  $("#mySidenav").css("width", "300px");
-  $("#mySidenav").css("padding", "4rem 2rem");
-  $("#main-content").css("padding-right", "300px");
+function actionNav(block, action) {
+    let width = "0", padding = width;
+    if (action == "open") {
+        width = "300px";
+        padding = "4rem 2rem";
+    }
+    $("body " + block).css({"width": width, "padding": padding});
+    $("body #main-content").css("padding-right", width);
 }
 
-function closeNav() {
-  $("#mySidenav").css("width", "0");
-  $("#mySidenav").css("padding", "0");
-  $("#main-content").css("padding-right", "0");
-}
+$("#main_help_button").click(() => {actionNav("#mySidenav", "open")});
+$(document).on("click", "#mySidenav .closebtn", () => {actionNav("#mySidenav", "close")});
 
-function openNavAcciones() {
-    $("body #mySidenavAcciones").css("width", "300px");
-    $("body #mySidenavAcciones").css("padding", "4rem 2rem");
-    $("body #main-content").css("padding-right", "300px");
-}
+$("#seccion-contexto .fa-question-circle").parent().click(() => {actionNav("#context-sidebar", "open")});
+$(document).on("click", "#context-sidebar .closebtn", () => {actionNav("#context-sidebar", "close")});
 
-function closeNavAcciones() {
-    $("body #mySidenavAcciones").css("width", "0");
-    $("body #mySidenavAcciones").css("padding", "0");
-    $("body #main-content").css("padding-right", "0");
-}
+$("#seccion-mejora .fa-question-circle").parent().click(() => {actionNav("#mySidenavAcciones", "open")});
+$(document).on("click", "#mySidenavAcciones .closebtn", () => {actionNav("#mySidenavAcciones", "close")});
 
-function openNavDiag() {
-    $("body #diagnosticoSidenav").css("width", "300px");
-    $("body #diagnosticoSidenav").css("padding", "4rem 2rem");
-    $("body #main-content").css("padding-right", "300px");
-}
+$("#seccion-diagnostico .fa-question-circle").parent().click(() => {actionNav("#diagnosticoSidenav", "open")});
+$(document).on("click", "#diagnosticoSidenav .closebtn", () => {actionNav("#diagnosticoSidenav", "close")});
 
-function closeNavDiag() {
-    $("body #diagnosticoSidenav").css("width", "0");
-    $("body #diagnosticoSidenav").css("padding", "0");
-    $("body #main-content").css("padding-right", "0");
-}
+$("#seccion-analisis .fa-question-circle").parent().click(() => {actionNav("#analisisSidenav", "open")});
+$(document).on("click", "#analisisSidenav .closebtn", () => {actionNav("#analisisSidenav", "close")});
 
-function openAnalisisNav() {
-    $("body #analisisSidenav").css("width", "300px");
-    $("body #analisisSidenav").css("padding", "4rem 2rem");
-    $("body #main-content").css("padding-right", "300px");
-}
-
-function closeAnalisisNav() {
-    $("body #analisisSidenav").css("width", "0");
-    $("body #analisisSidenav").css("padding", "0");
-    $("body #main-content").css("padding-right", "0");
-}
-
-function openNavContexto() {
-    $("body #context-sidebar").css("width", "300px");
-    $("body #context-sidebar").css("padding", "4rem 2rem");
-    $("body #main-content").css("padding-right", "300px");
-}
-
-function closeNavContexto() {
-    $("body #context-sidebar").css("width", "0");
-    $("body #context-sidebar").css("padding", "0");
-    $("body #main-content").css("padding-right", "0");
-}
-function openNavVerificacion() {
-    $("body #verificacionSidenav").css("width", "300px");
-    $("body #verificacionSidenav").css("padding", "4rem 2rem");
-    $("body #main-content").css("padding-right", "300px");
-
-}
-function closeNavVerificacion() {
-    $("body #verificacionSidenav").css("width", "0");
-    $("body #verificacionSidenav").css("padding", "0");
-    $("body #main-content").css("padding-right", "0");
-}
-
-$("#main_help_button").click(openNav);
-$(document).on("click", "#mySidenav .closebtn", closeNav);
-
-$("#seccion-contexto .fa-question-circle").parent().click(openNavContexto);
-$(document).on("click", "#context-sidebar .closebtn", closeNavContexto);
-
-$("#seccion-mejora .fa-question-circle").parent().click(openNavAcciones);
-$(document).on("click", "#mySidenavAcciones .closebtn", closeNavAcciones);
-
-$("#seccion-diagnostico .fa-question-circle").parent().click(openNavDiag);
-$(document).on("click", "#diagnosticoSidenav .closebtn", closeNavDiag);
-
-$("#seccion-analisis .fa-question-circle").parent().click(openAnalisisNav);
-$(document).on("click", "#analisisSidenav .closebtn", closeAnalisisNav);
-
-$("#seccion-verificacion .fa-question-circle").parent().click(openNavVerificacion);
-$(document).on("click", "#verificacionSidenav .closebtn", closeNavVerificacion);
+$("#seccion-verificacion .fa-question-circle").parent().click(() => {actionNav("#verificacionSidenav", "open")});
+$(document).on("click", "#verificacionSidenav .closebtn", () => {actionNav("#verificacionSidenav", "close")});
