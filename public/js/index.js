@@ -36,22 +36,9 @@ function closeNavDiag() {
     $("body #main-content").css("padding-right", "0");
 }
 
-function openNavContexto() {
-    $("body #context-sidebar").css("width", "300px");
-    $("body #context-sidebar").css("padding", "4rem 2rem");
-    $("body #main-content").css("padding-right", "300px");
-}
-
-function closeNavContexto() {
-    $("body #context-sidebar").css("width", "0");
-    $("body #context-sidebar").css("padding", "0");
-    $("body #main-content").css("padding-right", "0");
-}
 $("#seccion-mejora .fa-question-circle").parent().click(openNavAcciones);
 $(document).on("click", "#mySidenavAcciones .closebtn", closeNavAcciones);
 
-$("#seccion-contexto .fa-question-circle").parent().click(openNavAcciones);
-$(document).on("click", "#context-sidebar .closebtn", closeNavAcciones);
 //FUNCIONALIDAD DEL SIDEBAR DIAGNOSTICO
 
 $("#seccion-diagnostico .fa-question-circle").parent().click(openNavDiag);
