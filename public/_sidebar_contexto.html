@@ -16,7 +16,7 @@
 
         <h3 class="modal-title">Tutorial: Contexto de Fallas</h3>
         <p class="tutorial-description">Esta sección se describe exactamente el problema, qué falló y dónde y cómo sucedió.</p>
-        <p class="tutorial-description">*NOTA: Los combos en gris ya vienen precargados, únicamente los recuadros en blanco se pueden llenar o modificar.
+        <p class="tutorial-description nota-tutorial">*NOTA: Los combos en gris ya vienen precargados, únicamente los recuadros en blanco se pueden llenar o modificar.
 </p>
         <p class="tutorial-step">DATOS GENERALES: En este apartado se encuentran el número consecutivo de documento (el cuál no puede ser modificado),
           el nombre que se le dará al análisis, las palabras clave que se usarán para localizar el AFA, los responsables y las fechas entre pasos.</p>
@@ -43,14 +43,26 @@
         <p class="tutorial-step">- Ejemplo: escribir <b>HU-ZIN-ZIN2-SPRO-MOSP</b>, significa que está en la planta de Universidad <b>(HU)</b>,
           la zona de Zintro <b>(ZIN)</b>, es la línea Zintro 2 <b>(ZIN2)</b>, la sección de la línea es la parte de Proceso <b>(SPRO)</b>,
           en el conjunto de Molino de Skin-Pass <b>(MOSP)</b></p>
-        <p class="tutorial-step">4. En "Denominación de Unic.Tec." escribe el nombre de la ubicación técnica (UT)</p>
+        <p class="tutorial-step">5. En "Denominación de Unic.Tec." escribe el nombre de la ubicación técnica (UT)</p>
         <p class="tutorial-step">- Ejemplo: Si determinaste que la abreviación de ubicación técnica terminaba en MOSP, escribe en este campo <b>Molino Skin-Pass</b></p>
-        <p class="tutorial-step">5. En el campo Grupo Planificador ("GPO. Plan.") indica la clave del equipo que se encarga del mantenimiento</p>
+        <p class="tutorial-step">6. En el campo Grupo Planificador ("GPO. Plan.") indica la clave del equipo que se encarga del mantenimiento</p>
         <p class="tutorial-step">- Ejemplo: En este caso el equipo (Líder +  Inspectores) es el ZM2 = Mecánicos de Galvanizado 2 el Puesto de Trabajo es ZM2I225, es la clave del encargado del equipo, en este caso es un inspector (este inspector es el que se encarga de los mantenimientos de ese equipo). </p>
         <img id="gpo_plan_img" src="assets/placeholder.png" alt="" class="tutorial-img">
-        <p class="tutorial-step">6. En el campo Puesto de Trabajo Responsable ("Pto.Tjo.Resp.") indica la clave del encargado de los mantenimientos del equipo.</p>
+        <p class="tutorial-step">7. En el campo Puesto de Trabajo Responsable ("Pto.Tjo.Resp.") indica la clave del encargado de los mantenimientos del equipo.</p>
         <p class="tutorial-step">- Ejemplo: En este caso el puesto de trabajo encargado es ZM2I225, que en este caso es un inspector. </p>
         <img id="pto_tjo_img" src="assets/placeholder.png" alt="" class="tutorial-img">
+        <hr>
+        <p class="tutorial-step">DATOS AVERÍA: Muestra los datos que se escribieron en el Aviso de Falla (M2 más antiguo)</p>
+        <img src="assets/placeholder.png" alt="" class="tutorial-img">
+        <p class="tutorial-step">1. Ingresar inicio y fin de la demora y su duración.</p>
+        <p class="tutorial-step">2. Escribir la Parte del Equipo dañada, Síntoma que presentaba y la Causa aparente. Dentro de los campos de texto poner cualquier explicación extra necesarea.</p>
+        <p class="tutorial-step">3. En el campo de "Ciclo", escribe el cíclo en el que se presentó la falla.</p>
+        <p class="tutorial-step">- Las opciones de este campo son Mortalidad Infantil, Vida Útil y Fin de Vida Útil.</p>
+        <p class="tutorial-step">4. En la tabla se indican los Avisos M2 asociados. Puede haber más de un reporte de demora, por la misma falla, por lo que se anexan todos los reportes (la suma de ellos puede sobrepasar el límite de minutos de demora que obliga a hacer un AFA)</p>
+
+        <p class="tutorial-step">- Los botones que se ven son un lápiz, con él se puede modificar el aviso (por si falta información, o consideran que está equivocada) y una lupa, por si se quiere únicamente visualizar el aviso, o ver alguna imagen adjunta en él.</p>
+        <img id="botones-editar-lupa" src="assets/placeholder.png" alt="" class="tutorial-img">
+        <p class="tutorial-step nota-tutorial">*NOTA: Toda esta información, la precarga el sistema.</p>
         <div class="d-flex flex-row justify-content-around">
           <a href="#"><i class="fas fa-arrow-left action-color"></i></a>
           <a href="#"><i class="fas fa-arrow-right action-color"></i></a>
