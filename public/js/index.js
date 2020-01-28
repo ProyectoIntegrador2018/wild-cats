@@ -7,8 +7,8 @@ window.onload = function(){
     $('#analisis-seccion').load('../_analisis_seccion.html');
     $('.show-sidebar-mejora').load('../_sidebar_acciones_mejora.html');
     $('.show-sidebar-diagnostico').load('../_sidebar_diagnostico.html');
+    $('.show-sidebar-analisis').load('../_sidebar_analisis_de_causas.html');
     $('.show-sidebar').load('../_sidebar.html');
-   
 }
 
 //FUNCIONALIDAD DEL SIDEBAR ACCIONES DE MEJORA
@@ -31,10 +31,22 @@ function closeNavDiag() {
     $("body #diagnosticoSidenav").css("width", "0");
     $("body #diagnosticoSidenav").css("padding", "0");
 }
+
+function openAnalisisNav() {
+    $("body #analisisSidenav").css("width", "300px");
+    $("body #analisisSidenav").css("padding", "4rem 2rem");
+}
+
+function closeAnalisisNav() {
+    $("body #analisisSidenav").css("width", "0");
+    $("body #analisisSidenav").css("padding", "0");
+}
+
 $("#seccion-mejora .fa-question-circle").parent().click(openNavAcciones);
 $(document).on("click", "#mySidenavAcciones .closebtn", closeNavAcciones);
 
-//FUNCIONALIDAD DEL SIDEBAR DIAGNOSTICO
-
 $("#seccion-diagnostico .fa-question-circle").parent().click(openNavDiag);
 $(document).on("click", "#diagnosticoSidenav .closebtn", closeNavDiag);
+
+$("#seccion-analisis .fa-question-circle").parent().click(openAnalisisNav);
+$(document).on("click", "#analisisSidenav .closebtn", closeAnalisisNav);
