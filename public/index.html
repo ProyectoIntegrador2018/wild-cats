@@ -11,59 +11,63 @@
     <title>AFA</title>
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light d-flex justify-content-between">
-      <div class="">
-        <i class="fas fa-user"></i>
-      </div>
-      <div class="d-flex flex-row">
+    <div id="main-content" class="">
+      <nav class="navbar navbar-light bg-light d-flex justify-content-between">
         <div class="">
-          APM / Análisis de falla (AFA) / Consulta / Edición AFA #1234567890
+          <i class="fas fa-user"></i>
         </div>
-          <i class="fas fa-ellipsis-v ml-sm-2"></i>
-      </div>
-    </nav>
-    <section class="top_section d-inline-flex flex-row justify-content-between">
-      <div class="sections">
-        <a href="#" class="section_button color_contexto d-inline-flex flex-column align-items-center justify-content-between">
-          <img src="assets/contexto.png" alt="" style="height: 2.5rem;">
-          <span class="">
-            CONTEXTO
-          </span>
-        </a>
+        <div class="d-flex flex-row">
+          <div class="">
+            APM / Análisis de falla (AFA) / Consulta / Edición AFA #1234567890
+          </div>
+            <i class="fas fa-ellipsis-v ml-sm-2"></i>
+        </div>
+      </nav>
+      <section class="top_section d-inline-flex flex-row justify-content-between">
+        <div class="sections">
+          <a href="#" class="section_button color_contexto d-inline-flex flex-column align-items-center justify-content-between">
+            <img src="assets/contexto.png" alt="" style="height: 2.5rem;">
+            <span class="">
+              CONTEXTO
+            </span>
+          </a>
 
-        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_analisis">
-          <img src="assets/analisis.png" alt="" style="height: 2.5rem;">
-          <span>ANÁLISIS</span>
-        </a>
-        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_diagnostico">
-          <img src="assets/diagnostico.png" alt="" style="height: 2.5rem;">
-          <span>DIAGNÓSTICO</span>
-        </a>
-        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_acciones">
-          <img src="assets/acciones.png" alt="" style="height: 2.5rem;">
-          <span>ACCIONES</span>
-        </a>
-        <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_eficacia">
-          <img src="assets/eficacia.png" alt="" style="height: 2.5rem;">
-          <span>EFICACIA</span>
-        </a>
-      </div>
-      <div class="progress_section d-inline-flex flex-column justify-content-around align-items-start">
-        <div class="progress_bars d-inline-flex">
-          <div class="progress_bar green"></div>
-          <div class="progress_bar green"></div>
-          <div class="progress_bar yellow"></div>
-          <div class="progress_bar"></div>
-          <div class="progress_bar"></div>
-          <div class="progress_bar"></div>
+          <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_analisis">
+            <img src="assets/analisis.png" alt="" style="height: 2.5rem;">
+            <span>ANÁLISIS</span>
+          </a>
+          <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_diagnostico">
+            <img src="assets/diagnostico.png" alt="" style="height: 2.5rem;">
+            <span>DIAGNÓSTICO</span>
+          </a>
+          <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_acciones">
+            <img src="assets/acciones.png" alt="" style="height: 2.5rem;">
+            <span>ACCIONES</span>
+          </a>
+          <a href="#" class="section_button d-inline-flex flex-column align-items-center justify-content-between color_eficacia">
+            <img src="assets/eficacia.png" alt="" style="height: 2.5rem;">
+            <span>EFICACIA</span>
+          </a>
         </div>
-        <div class="d-inline-flex">
-          PENDIENTE DE APROBACIÓN
+        <div class="progress_section d-inline-flex flex-column justify-content-around align-items-start">
+          <div class="progress_bars d-inline-flex">
+            <div class="progress_bar green"></div>
+            <div class="progress_bar green"></div>
+            <div class="progress_bar yellow"></div>
+            <div class="progress_bar"></div>
+            <div class="progress_bar"></div>
+            <div class="progress_bar"></div>
+          </div>
+          <div class="d-inline-flex">
+            PENDIENTE DE APROBACIÓN
+          </div>
         </div>
-      </div>
     </section>
     <div class="section show-sidebar"></div>
-    <section>
+    <div class="section show-sidebar-diagnostico"></div>
+    <div class="section show-sidebar-mejora"></div>
+    <div class="section show-sidebar-analisis"></div>
+    <section id="seccion-contexto">
         <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
           <div class="d-flex flex-row align-items-center justify-content-start">
             <div class="icon d-flex align-items-center justify-content-center color_contexto">
@@ -72,13 +76,13 @@
             <h3 class="title">
               Contexto de la falla
             </h3>
-            <button class="no-style-btn" type="button" name="button" onclick="openNav()"> <i class="fas fa-question-circle action-color"></i> </button>
+            <button class="no-style-btn" type="button" name="button"> <i class="fas fa-question-circle action-color"></i> </button>
           </div>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="section" id="contexto-falla"></div>
     </section>
-    <section>
+    <section id="seccion-analisis">
         <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
           <div class="d-flex flex-row align-items-center justify-content-start">
             <div class="icon d-flex align-items-center justify-content-center color_analisis">
@@ -87,13 +91,13 @@
             <h3 class="title">
               Análisis de causas
             </h3>
-            <button class="no-style-btn" type="button" name="button" onclick="openNav()"> <i class="fas fa-question-circle help-color"></i> </button>
+            <button class="no-style-btn" type="button" name="button"> <i class="fas fa-question-circle action-color"></i> </button>
           </div>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="section" id="analisis-seccion"></div>
     </section>
-    <section>
+    <section id="seccion-diagnostico">
         <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
           <div class="d-flex flex-row align-items-center justify-content-start">
             <div class="icon d-flex align-items-center justify-content-center color_diagnostico">
@@ -102,13 +106,13 @@
             <h3 class="title">
               Diagnóstico
             </h3>
-            <button class="no-style-btn" type="button" name="button" onclick="openNav()"> <i class="fas fa-question-circle help-color"></i> </button>
+            <button class="no-style-btn" type="button" name="button"> <i class="fas fa-question-circle action-color"></i> </button>
           </div>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="section" id="diagnostico-seccion"></div>
     </section>
-    <section>
+    <section id="seccion-mejora">
         <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
           <div class="d-flex flex-row align-items-center justify-content-start">
             <div class="icon d-flex align-items-center justify-content-center color_acciones">
@@ -117,12 +121,11 @@
             <h3 class="title">
               Acciones de mejora
             </h3>
-            <button class="no-style-btn" type="button" name="button" onclick="openNav()"> <i class="fas fa-question-circle help-color"></i> </button>
+            <button class="no-style-btn" type="button" name="button"> <i class="fas fa-question-circle action-color"></i> </button>
           </div>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div class="section" id="acciones-mejora"></div>
-
     </section>
     <section>
         <div class="section_title_bar d-flex flex-row align-items-center justify-content-between">
@@ -133,27 +136,28 @@
             <h3 class="title">
               Verificación de eficacia
             </h3>
-            <button class="no-style-btn" type="button" name="button" onclick="openNav()"> <i class="fas fa-question-circle help-color"></i> </button>
+            <button class="no-style-btn" type="button" name="button"> <i class="fas fa-question-circle action-color"></i> </button>
           </div>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="section" id="verificacion-eficacia"></div>
-    </section>
-    <div class="section" id="evaluacion-afa"></div>
+          </div>
+          <div class="section" id="verificacion-eficacia"></div>
+      </section>
+      <div class="section" id="evaluacion-afa"></div>
+</div>
+      <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="/__/firebase/7.7.0/firebase-app.js"></script>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.7.0/firebase-app.js"></script>
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+      <script src="/__/firebase/7.7.0/firebase-analytics.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.7.0/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+      <!-- Initialize Firebase -->
+      <script src="/__/firebase/init.js"></script>
 
     <div class="form-group col-lg">
-      <button class="btn help-btn green float-md-right" onclick="openNav()">AYUDA</button>
+      <button class="btn help-btn green float-md-right">AYUDA</button>
     </div>
+
+
 
     <!-- HELP MENU MODAL-->
     <div id="helpModal" class="modal fade" role="dialog">
