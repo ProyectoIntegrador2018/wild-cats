@@ -14,13 +14,17 @@ window.onload = function(){
 }
 
 function actionNav(block, action) {
-    let width = "0", padding = width;
+    let paddingRightContent = "300px";
     if (action == "open") {
-        width = "300px";
-        padding = "4rem 2rem";
+        if(!$("body " + block).hasClass("active-sidebar")){
+            $(".active-sidebar").removeClass("active-sidebar");
+            $("body " + block).addClass("active-sidebar");
+        }
+    } else {
+        $(".active-sidebar").removeClass("active-sidebar");
+        paddingRightContent = "0";
     }
-    $("body " + block).css({"width": width, "padding": padding});
-    $("body #main-content").css("padding-right", width);
+    $("body #main-content").css("padding-right", paddingRightContent);
 }
 
 $("#main_help_button").click(() => {actionNav("#mySidenav", "open")});
