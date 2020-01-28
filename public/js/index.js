@@ -5,5 +5,48 @@ window.onload = function(){
     $('#contexto-falla').load('../_contexto_falla.html');
     $('#diagnostico-seccion').load('../_diagnostico-seccion.html');
     $('#analisis-seccion').load('../_analisis_seccion.html');
+    $('.show-sidebar-mejora').load('../_sidebar_acciones_mejora.html');
+    $('.show-sidebar-diagnostico').load('../_sidebar_diagnostico.html');
     $('.show-sidebar').load('../_sidebar.html');
+
 }
+
+//FUNCIONALIDAD DEL SIDEBAR ACCIONES DE MEJORA
+function openNavAcciones() {
+    $("body #mySidenavAcciones").css("width", "300px");
+    $("body #mySidenavAcciones").css("padding", "4rem 2rem");
+}
+
+function closeNavAcciones() {
+    $("body #mySidenavAcciones").css("width", "0");
+    $("body #mySidenavAcciones").css("padding", "0");
+}
+
+function openNavDiag() {
+    $("body #diagnosticoSidenav").css("width", "300px");
+    $("body #diagnosticoSidenav").css("padding", "4rem 2rem");
+}
+
+function closeNavDiag() {
+    $("body #diagnosticoSidenav").css("width", "0");
+    $("body #diagnosticoSidenav").css("padding", "0");
+}
+
+function openNavContexto() {
+    $("body #context-sidebar").css("width", "300px");
+    $("body #context-sidebar").css("padding", "4rem 2rem");
+}
+
+function closeNavContexto() {
+    $("body #context-sidebar").css("width", "0");
+    $("body #context-sidebar").css("padding", "0");
+}
+$("#seccion-mejora .fa-question-circle").parent().click(openNavAcciones);
+$(document).on("click", "#mySidenavAcciones .closebtn", closeNavAcciones);
+
+$("#seccion-contexto .fa-question-circle").parent().click(openNavAcciones);
+$(document).on("click", "#context-sidebar .closebtn", closeNavAcciones);
+//FUNCIONALIDAD DEL SIDEBAR DIAGNOSTICO
+
+$("#seccion-diagnostico .fa-question-circle").parent().click(openNavDiag);
+$(document).on("click", "#diagnosticoSidenav .closebtn", closeNavDiag);
