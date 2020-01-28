@@ -15,31 +15,37 @@ window.onload = function(){
 function openNavAcciones() {
     $("body #mySidenavAcciones").css("width", "300px");
     $("body #mySidenavAcciones").css("padding", "4rem 2rem");
+    $("body #main-content").css("padding-right", "300px");
 }
 
 function closeNavAcciones() {
     $("body #mySidenavAcciones").css("width", "0");
     $("body #mySidenavAcciones").css("padding", "0");
+    $("body #main-content").css("padding-right", "0");
 }
 
 function openNavDiag() {
     $("body #diagnosticoSidenav").css("width", "300px");
     $("body #diagnosticoSidenav").css("padding", "4rem 2rem");
+    $("body #main-content").css("padding-right", "300px");
 }
 
 function closeNavDiag() {
     $("body #diagnosticoSidenav").css("width", "0");
     $("body #diagnosticoSidenav").css("padding", "0");
+    $("body #main-content").css("padding-right", "0");
 }
 
 function openNavContexto() {
     $("body #context-sidebar").css("width", "300px");
     $("body #context-sidebar").css("padding", "4rem 2rem");
+    $("body #main-content").css("padding-right", "300px");
 }
 
 function closeNavContexto() {
     $("body #context-sidebar").css("width", "0");
     $("body #context-sidebar").css("padding", "0");
+    $("body #main-content").css("padding-right", "0");
 }
 $("#seccion-mejora .fa-question-circle").parent().click(openNavAcciones);
 $(document).on("click", "#mySidenavAcciones .closebtn", closeNavAcciones);
