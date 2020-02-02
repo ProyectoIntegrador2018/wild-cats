@@ -27,11 +27,22 @@ function actionNav(block, action) {
     $("body #main-content").css("padding-right", paddingRightContent);
 }
 
+
 $("#main_help_button").click(() => {actionNav("#mySidenav", "open")});
 $(document).on("click", "#mySidenav .closebtn", () => {actionNav("#mySidenav", "close")});
 
 $("#seccion-contexto .fa-question-circle").parent().click(() => {actionNav("#context-sidebar", "open")});
 $(document).on("click", "#context-sidebar .closebtn", () => {actionNav("#context-sidebar", "close")});
+
+
+$(document).on("click", ".sidenav .color_contexto",() =>{actionNav("#context-sidebar", "open")});
+$(document).on("click", ".sidenav .color_analisis",() =>{actionNav("#analisisSidenav", "open")});
+$(document).on("click", ".sidenav .color_diagnostico",() =>{actionNav("#diagnosticoSidenav", "open")});
+$(document).on("click", ".sidenav .color_acciones",() =>{actionNav("#mySidenavAcciones", "open")});
+$(document).on("click", ".sidenav .color_eficacia",() =>{actionNav("#verificacionSidenav", "open")});
+
+
+
 
 $("#seccion-mejora .fa-question-circle").parent().click(() => {actionNav("#mySidenavAcciones", "open")});
 $(document).on("click", "#mySidenavAcciones .closebtn", () => {actionNav("#mySidenavAcciones", "close")});
