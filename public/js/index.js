@@ -11,6 +11,7 @@ window.onload = function(){
     $('.show-sidebar-contexto').load('../_sidebar_contexto.html');
     $('.show-sidebar-verificacion').load('../_sidebar_verificacion.html');
     $('.show-sidebar').load('../_sidebar.html');
+    $('.show-sidebar-FAQ').load('../_frequently_asked_questions.html');
 }
 
 function actionNav(block, action) {
