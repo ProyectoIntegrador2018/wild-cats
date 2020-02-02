@@ -302,24 +302,29 @@ a.color_eficacia.active {
 
 .accordion {
   background-color: #eee;
-  color: #444;
+  color: #000;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 13px;
   transition: 0.4s;
+  font-weight: bold;
+  text-transform: lowercase;
+
 }
 
 .active, .accordion:hover {
-  background-color: #ccc; 
+  background-color: #a3a3a3; 
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 13px;
   display: none;
   background-color: white;
   overflow: hidden;
+  text-transform: lowercase;
+
 }
