@@ -1,0 +1,106 @@
+<link rel="stylesheet" href="css/index.css">
+
+<div id="FaqSidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+  
+    
+
+<h3 class="modal-title">Preguntas Frecuentes</h3>
+<br>
+<br>
+
+<button class="accordion">1. ¿Quién es el responsable de ejecutar el proceso de AFA?</button>
+<div class="panel">
+<p>
+  Solo el líder GMB es el responsable.
+</p>
+</div>
+
+<button class="accordion">2. ¿En caso de requerirse se pueden generar Avisos M5 (IMAN)?</button>
+<div class="panel">
+<p>
+  Si, solo desde la aplicación de AFA previa revisión en conjunto con el Jefe.
+</p>
+</div>
+
+<button class="accordion">3. ¿Qué pasa con los avisos mal direccionados de origen?</button>
+<div class="panel">
+<p>
+  Se cuenta con 5 días para hacer modificaciones en el aviso M2 y este sea asignado correctamente al área responsable antes de lanzar el MA automático (AFA).
+</p>
+</div>
+
+<button class="accordion">4. ¿Cuantos análisis se deben generar?</button>
+<div class="panel">
+<p>
+  Se requiere contar como mínimo con un análisis técnico y/o no técnico
+</p>
+</div>
+
+<button class="accordion">5. ¿Cuáles son los tiempos definidos para Corto y Largo plazo en Acciones de Mejora (M1,M3,M5,M6)?</button>
+<div class="panel">
+<p>
+  En la creación de avisos se define que el Corto plazo serán las acciones inmediatas (2 días) y Largo plazo serán de 3 días en adelante.
+</p>
+</div>
+
+<button class="accordion">6. ¿Se podrán agregar o eliminar avisos M2 una vez ya creado el AFA? </button>
+<div class="panel">
+<p>
+  De momento no se podrá agregar o eliminar los avisos M2 relacionados con el AFA.
+</p>
+</div>
+
+<button class="accordion">7. ¿Cuándo se lance un AFA en automático con el tercer criterio “El equipo es el A en el ABC de demoras mensual” hay líneas que no llegan a la mitad del tiempo establecido por la gerencia será necesario desarrollar el AFA?</button>
+<div class="panel">
+<p>
+  El equipo "A" siempre debe tener AFA independientemente que no llegue al tiempo establecido.
+</p>
+</div>
+
+<button class="accordion">8. ¿Dentro del MA (AFA) los avisos M2 relacionados pueden ser editados?</button>
+<div class="panel">
+<p>
+  Actualmente no se cuenta con esta opción si así se requiere toda modificación deberá ser realizada en MDW.
+</p>
+</div>
+
+<button class="accordion">9. ¿El aviso (MA) se podrá tratar una vez que este se encuentre vencido?</button>
+<div class="panel">
+<p>
+  Sí, solo cambiará de estado, pero esto no impedirá su desarrollo. 
+</p>
+</div>
+
+<button class="accordion">10. ¿Cómo se notificará al IMAN que cuenta con una solicitud de colaboración (M5)?</button>
+<div class="panel">
+<p>
+  El IMAN será notificado vía correo electrónico.
+</p>
+</div>
+
+<button class="accordion">11. ¿Cómo se notificará al Jefe que cuenta con AFA pendiente por aprobar?</button>
+<div class="panel">
+<p>
+  Tanto el Jefe como líder recibirán una notificación vía correo electrónico donde se anexa la liga para revisar y aprobar el AFA.
+</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</div>
