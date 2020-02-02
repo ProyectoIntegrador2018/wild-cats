@@ -26,32 +26,29 @@ function actionNav(block, action) {
     }
     $("body #main-content").css("padding-right", paddingRightContent);
 }
-
+function focusScrollMethod(place) {
+    $('html, body').animate({ scrollTop: $(place).offset().top }, 'slow');
+}
 
 $("#main_help_button").click(() => {actionNav("#mySidenav", "open")});
 $(document).on("click", "#mySidenav .closebtn", () => {actionNav("#mySidenav", "close")});
 
 $("#seccion-contexto .fa-question-circle").parent().click(() => {actionNav("#context-sidebar", "open")});
 $(document).on("click", "#context-sidebar .closebtn", () => {actionNav("#context-sidebar", "close")});
-
-
-$(document).on("click", ".sidenav .color_contexto",() =>{actionNav("#context-sidebar", "open")});
-$(document).on("click", ".sidenav .color_analisis",() =>{actionNav("#analisisSidenav", "open")});
-$(document).on("click", ".sidenav .color_diagnostico",() =>{actionNav("#diagnosticoSidenav", "open")});
-$(document).on("click", ".sidenav .color_acciones",() =>{actionNav("#mySidenavAcciones", "open")});
-$(document).on("click", ".sidenav .color_eficacia",() =>{actionNav("#verificacionSidenav", "open")});
-
-
-
+$(document).on("click", ".sidenav .color_contexto",() =>{actionNav("#context-sidebar", "open"),focusScrollMethod("#seccion-contexto")});
 
 $("#seccion-mejora .fa-question-circle").parent().click(() => {actionNav("#mySidenavAcciones", "open")});
 $(document).on("click", "#mySidenavAcciones .closebtn", () => {actionNav("#mySidenavAcciones", "close")});
+$(document).on("click", ".sidenav .color_acciones",() =>{actionNav("#mySidenavAcciones", "open"),focusScrollMethod("#seccion-mejora")});
 
 $("#seccion-diagnostico .fa-question-circle").parent().click(() => {actionNav("#diagnosticoSidenav", "open")});
 $(document).on("click", "#diagnosticoSidenav .closebtn", () => {actionNav("#diagnosticoSidenav", "close")});
+$(document).on("click", ".sidenav .color_diagnostico",() =>{actionNav("#diagnosticoSidenav", "open"),focusScrollMethod("#seccion-diagnostico")});
 
 $("#seccion-analisis .fa-question-circle").parent().click(() => {actionNav("#analisisSidenav", "open")});
 $(document).on("click", "#analisisSidenav .closebtn", () => {actionNav("#analisisSidenav", "close")});
+$(document).on("click", ".sidenav .color_analisis",() =>{actionNav("#analisisSidenav", "open"),focusScrollMethod("#seccion-analisis")});
 
 $("#seccion-verificacion .fa-question-circle").parent().click(() => {actionNav("#verificacionSidenav", "open")});
 $(document).on("click", "#verificacionSidenav .closebtn", () => {actionNav("#verificacionSidenav", "close")});
+$(document).on("click", ".sidenav .color_eficacia",() =>{actionNav("#verificacionSidenav", "open"),focusScrollMethod("#seccion-verificacion")});
