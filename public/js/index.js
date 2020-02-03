@@ -10,8 +10,9 @@ window.onload = function(){
     $('.show-sidebar-analisis').load('../_sidebar_analisis_de_causas.html');
     $('.show-sidebar-contexto').load('../_sidebar_contexto.html');
     $('.show-sidebar-verificacion').load('../_sidebar_verificacion.html');
-    $('.show-sidebar').load('../_sidebar.html');
     $('.show-sidebar-FAQ').load('../_frequently_asked_questions.html');
+    $('.show-sidebar').load('../_sidebar.html');
+    
 }
 
 function actionNav(block, action) {
@@ -26,10 +27,13 @@ function actionNav(block, action) {
         paddingRightContent = "0";
     }
     $("body #main-content").css("padding-right", paddingRightContent);
+    
 }
 function focusScrollMethod(place) {
     $('html, body').animate({ scrollTop: $(place).offset().top }, 'slow');
 }
+
+
 
 $("#main_help_button").click(() => {actionNav("#mySidenav", "open")});
 $(document).on("click", "#mySidenav .closebtn", () => {actionNav("#mySidenav", "close")});
@@ -53,3 +57,8 @@ $(document).on("click", ".sidenav .color_analisis",() =>{actionNav("#analisisSid
 $("#seccion-verificacion .fa-question-circle").parent().click(() => {actionNav("#verificacionSidenav", "open")});
 $(document).on("click", "#verificacionSidenav .closebtn", () => {actionNav("#verificacionSidenav", "close")});
 $(document).on("click", ".sidenav .color_eficacia",() =>{actionNav("#verificacionSidenav", "open"),focusScrollMethod("#seccion-verificacion")});
+
+$(document).on("click", "#FAQ_button", () => {actionNav("#FaqSidenav", "open")});
+$(document).on("click", "#FaqSidenav .closebtn", () => {actionNav("#FaqSidenav", "close")});
+
+$(document).on("click", "#mySidenav #Tutorial_button", () => {actionNav("#context-sidebar", "open"),focusScrollMethod("#seccion-contexto")});
