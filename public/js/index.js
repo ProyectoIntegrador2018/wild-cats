@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function () {
     $('#acciones-mejora').load('../_acciones_mejora.html');
     $('#verificacion-eficacia').load('../_verificacion_eficacia.html');
     $('#evaluacion-afa').load('../_evaluacion_afa.html');
@@ -11,14 +11,14 @@ window.onload = function(){
     $('.show-sidebar-contexto').load('../_sidebar_contexto.html');
     $('.show-sidebar-verificacion').load('../_sidebar_verificacion.html');
     $('.show-sidebar-FAQ').load('../_frequently_asked_questions.html');
+    $('.show-sidebar-terminos').load('../_sidebar_terminos.html');
     $('.show-sidebar').load('../_sidebar.html');
-    
 }
 
 function actionNav(block, action) {
     let paddingRightContent = "300px";
     if (action == "open") {
-        if(!$("body " + block).hasClass("active-sidebar")){
+        if (!$("body " + block).hasClass("active-sidebar")) {
             $(".active-sidebar").removeClass("active-sidebar");
             $("body " + block).addClass("active-sidebar");
         }
@@ -27,38 +27,90 @@ function actionNav(block, action) {
         paddingRightContent = "0";
     }
     $("body #main-content").css("padding-right", paddingRightContent);
-    
 }
+
 function focusScrollMethod(place) {
-    $('html, body').animate({ scrollTop: $(place).offset().top }, 'slow');
+    $('html, body').animate({
+        scrollTop: $(place).offset().top
+    }, 'slow');
 }
 
+$("#main_help_button").click(() => {
+    actionNav("#mySidenav", "open")
+});
 
+$(document).on("click", "#mySidenav .closebtn", () => {
+    actionNav("#mySidenav", "close")
+});
 
-$("#main_help_button").click(() => {actionNav("#mySidenav", "open")});
-$(document).on("click", "#mySidenav .closebtn", () => {actionNav("#mySidenav", "close")});
+$("#seccion-contexto .fa-question-circle").parent().click(() => {
+    actionNav("#context-sidebar", "open")
+});
 
-$("#seccion-contexto .fa-question-circle").parent().click(() => {actionNav("#context-sidebar", "open")});
-$(document).on("click", "#context-sidebar .closebtn", () => {actionNav("#context-sidebar", "close")});
-$(document).on("click", ".sidenav .color_contexto",() =>{actionNav("#context-sidebar", "open"),focusScrollMethod("#seccion-contexto")});
+$(document).on("click", "#context-sidebar .closebtn", () => {
+    actionNav("#context-sidebar", "close")
+});
 
-$("#seccion-mejora .fa-question-circle").parent().click(() => {actionNav("#mySidenavAcciones", "open")});
-$(document).on("click", "#mySidenavAcciones .closebtn", () => {actionNav("#mySidenavAcciones", "close")});
-$(document).on("click", ".sidenav .color_acciones",() =>{actionNav("#mySidenavAcciones", "open"),focusScrollMethod("#seccion-mejora")});
+$(document).on("click", ".sidenav .color_contexto", () => {
+    actionNav("#context-sidebar", "open"), focusScrollMethod("#seccion-contexto")
+});
 
-$("#seccion-diagnostico .fa-question-circle").parent().click(() => {actionNav("#diagnosticoSidenav", "open")});
-$(document).on("click", "#diagnosticoSidenav .closebtn", () => {actionNav("#diagnosticoSidenav", "close")});
-$(document).on("click", ".sidenav .color_diagnostico",() =>{actionNav("#diagnosticoSidenav", "open"),focusScrollMethod("#seccion-diagnostico")});
+$("#seccion-mejora .fa-question-circle").parent().click(() => {
+    actionNav("#mySidenavAcciones", "open")
+});
 
-$("#seccion-analisis .fa-question-circle").parent().click(() => {actionNav("#analisisSidenav", "open")});
-$(document).on("click", "#analisisSidenav .closebtn", () => {actionNav("#analisisSidenav", "close")});
-$(document).on("click", ".sidenav .color_analisis",() =>{actionNav("#analisisSidenav", "open"),focusScrollMethod("#seccion-analisis")});
+$(document).on("click", "#mySidenavAcciones .closebtn", () => {
+    actionNav("#mySidenavAcciones", "close")
+});
 
-$("#seccion-verificacion .fa-question-circle").parent().click(() => {actionNav("#verificacionSidenav", "open")});
-$(document).on("click", "#verificacionSidenav .closebtn", () => {actionNav("#verificacionSidenav", "close")});
-$(document).on("click", ".sidenav .color_eficacia",() =>{actionNav("#verificacionSidenav", "open"),focusScrollMethod("#seccion-verificacion")});
+$(document).on("click", ".sidenav .color_acciones", () => {
+    actionNav("#mySidenavAcciones", "open"), focusScrollMethod("#seccion-mejora")
+});
 
-$(document).on("click", "#FAQ_button", () => {actionNav("#FaqSidenav", "open")});
-$(document).on("click", "#FaqSidenav .closebtn", () => {actionNav("#FaqSidenav", "close")});
+$("#seccion-diagnostico .fa-question-circle").parent().click(() => {
+    actionNav("#diagnosticoSidenav", "open")
+});
 
-$(document).on("click", "#mySidenav #Tutorial_button", () => {actionNav("#context-sidebar", "open"),focusScrollMethod("#seccion-contexto")});
+$(document).on("click", "#diagnosticoSidenav .closebtn", () => {
+    actionNav("#diagnosticoSidenav", "close")
+});
+
+$(document).on("click", ".sidenav .color_diagnostico", () => {
+    actionNav("#diagnosticoSidenav", "open"), focusScrollMethod("#seccion-diagnostico")
+});
+
+$("#seccion-analisis .fa-question-circle").parent().click(() => {
+    actionNav("#analisisSidenav", "open")
+});
+
+$(document).on("click", "#analisisSidenav .closebtn", () => {
+    actionNav("#analisisSidenav", "close")
+});
+
+$(document).on("click", ".sidenav .color_analisis", () => {
+    actionNav("#analisisSidenav", "open"), focusScrollMethod("#seccion-analisis")
+});
+
+$("#seccion-verificacion .fa-question-circle").parent().click(() => {
+    actionNav("#verificacionSidenav", "open")
+});
+
+$(document).on("click", "#verificacionSidenav .closebtn", () => {
+    actionNav("#verificacionSidenav", "close")
+});
+
+$(document).on("click", ".sidenav .color_eficacia", () => {
+    actionNav("#verificacionSidenav", "open"), focusScrollMethod("#seccion-verificacion")
+});
+
+$(document).on("click", "#terminos_btn", () => {
+    actionNav("#TerminosSidenav", "open")
+});
+
+$(document).on("click", "#TerminosSidenav .closebtn", () => {
+    actionNav("#TerminosSidenav", "close")
+});
+
+$(document).on("click", "#mySidenav #Tutorial_button", () => {
+    actionNav("#context-sidebar", "open"), focusScrollMethod("#seccion-contexto")
+});
