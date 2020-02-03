@@ -1,58 +1,80 @@
 <div id="TerminosSidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn">&times;</a>
-  <h3 class="modal-title">Diccionario de Terminos</h3>
-  <br>
-  <br>
-  <button class="accordion">Termino</button>
-  <div class="panel">
-    <p>
-      Definicion
-    </p>
-  </div>
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <h3 class="modal-title">Diccionario de Terminos</h3>
+    <br>
+    <input type="text" id="terminosInput" onkeyup="searchTerminos()" placeholder="Buscar..">
+    <br>    
+    <div class="terminos">
 
-  <button class="accordion">Termino</button>
-  <div class="panel">
-    <p>
-      Definicion
-    </p>
-  </div>
+        <div class="termino">
+            <button class="accordion">Termino1</button>
+            <div class="panel">
+                <p>
+                    Definicion
+                </p>
+            </div>
+        </div>
 
-  <button class="accordion">Termino</button>
-  <div class="panel">
-    <p>
-      Definicion
-    </p>
-  </div>
+        <div class="termino">
+            <button class="accordion">Termino2</button>
+            <div class="panel">
+                <p>
+                    Definicion
+                </p>
+            </div>
+        </div>
 
-  <button class="accordion">Termino</button>
-  <div class="panel">
-    <p>
-      Definicion
-    </p>
-  </div>
+        <div class="termino">
+            <button class="accordion">Termino3</button>
+            <div class="panel">
+                <p>
+                    Definicion
+                </p>
+            </div>
+        </div>
 
-  <button class="accordion">Termino</button>
-  <div class="panel">
-    <p>
-      Definicion
-    </p>
-  </div>
+        <div class="termino">
+            <button class="accordion">Termino4</button>
+            <div class="panel">
+                <p>
+                    Definicion
+                </p>
+            </div>
+        </div>
+    </div>
 
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
         }
-      });
+
+        function searchTerminos() {
+        // Declare variables
+        var filter, terminos, i, txtValue;
+        filter = $('#terminosInput').val().toUpperCase();
+        terminos = $('.terminos .termino');
+    
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < terminos.length; i++) {
+            txtValue = $(terminos[i]).text();
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                terminos[i].style.display = "";
+            } else {
+                terminos[i].style.display = "none";
+            }
+        }
     }
-  </script>
+    </script>
 
 </div>
