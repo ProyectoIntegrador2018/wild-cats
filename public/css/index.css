@@ -316,7 +316,7 @@ a.color_eficacia.active {
 
 }
 
-.active, .accordion:hover {
+.accordion:hover {
   background-color: #a3a3a3; 
 }
 
