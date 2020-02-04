@@ -20,10 +20,11 @@
 </p>
         <p class="tutorial-step">DATOS GENERALES: En este apartado se encuentran el número consecutivo de documento (el cuál no puede ser modificado),
           el nombre que se le dará al análisis, las palabras clave que se usarán para localizar el AFA, los responsables y las fechas entre pasos.</p>
+          <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-datos.png?alt=media&token=a04ff547-9bf7-437a-be7f-8c8efca9d684" alt="" class="tutorial-img">
         <p class="tutorial-step">1. Escribe en el campo de decripción lo que falló.</p>
         <p class="tutorial-step">2. En el campo de palabras claves, escribe palabras relacionadas con el problema.</p>
-        <img src="assets/placeholder.png" alt="" class="tutorial-img">
-        <p class="tutorial-step">3. Llena los campos de responsables: , y el .. </p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-palabrasclave.png?alt=media&token=67d334f1-d1cb-4073-af78-04dab3f09a3f" alt="" class="tutorial-img">
+        <p class="tutorial-step">3. Llena los campos de responsables:</p>
         <p class="tutorial-step">- Responsable Asignado = Lider (quien realiza el AFA)</p>
         <p class="tutorial-step">- Responsable Aprobador = Jefe (quien revisa y aprueba)</p>
         <p class="tutorial-step">- Ingeniero De Mantenimiento = Experto de la línea (al finalizar el AFA revisa y acredita que la falla no volvió a presentarse y cierra el caso de análisis)</p>
@@ -32,10 +33,11 @@
         <p class="tutorial-step">- Venc. Tratamiento = 15 días después de la fecha de creación para terminar el Análisis/Tratamiento del caso </p>
         <p class="tutorial-step">- Venc. Aprobación = 1 día  después del tratamiento para ser aprobado por el jefe</p>
         <p class="tutorial-step">- Venc. Cierre = 90 días después de la última acción de mejora para el Cierre (si aún no hay acciones de mejora, el sistema cuenta 90 días a partir de la Aprobación</p>
-        <p class="tutorial-step">Da clic en fuardar datos generales para guardar tu selección de esta sección. </p>
+        <p class="tutorial-step">5. Da clic en fuardar datos generales para guardar tu selección de esta sección. </p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-guardar.png?alt=media&token=e68c45ad-6313-40a0-b061-7584b73eb6cb" class="tutorial-img"alt="">
         <hr>
         <p class="tutorial-step">OBJETO DE REFERENCIA: En este apartado se indica información del equipo que presentó la falla</p>
-        <img src="assets/placeholder.png" alt="" class="tutorial-img">
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-objetos.png?alt=media&token=3eb1fbdf-bf76-43ed-b1b5-4539f19797e5" alt="" class="tutorial-img">
         <p class="tutorial-step">1. En el primer campo ("equipo"), escribe el número con el que se identifica el sistema que falló. </p>
         <p class="tutorial-step">2. En el campo de "denominación de objeto técnico", escribe el nombre del equipo.</p>
         <p class="tutorial-step">3. En el campo de "criticidad", especifica si el equipo con falla es crítico o no para la línea.</p>
@@ -47,13 +49,13 @@
         <p class="tutorial-step">- Ejemplo: Si determinaste que la abreviación de ubicación técnica terminaba en MOSP, escribe en este campo <b>Molino Skin-Pass</b></p>
         <p class="tutorial-step">6. En el campo Grupo Planificador ("GPO. Plan.") indica la clave del equipo que se encarga del mantenimiento</p>
         <p class="tutorial-step">- Ejemplo: En este caso el equipo (Líder +  Inspectores) es el ZM2 = Mecánicos de Galvanizado 2 el Puesto de Trabajo es ZM2I225, es la clave del encargado del equipo, en este caso es un inspector (este inspector es el que se encarga de los mantenimientos de ese equipo). </p>
-        <img id="gpo_plan_img" src="assets/placeholder.png" alt="" class="tutorial-img">
+        <img id="gpo_plan_img" src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-gpoplan.png?alt=media&token=f3e553ef-31ff-489b-82c1-caa48381797e" alt="" class="tutorial-img">
         <p class="tutorial-step">7. En el campo Puesto de Trabajo Responsable ("Pto.Tjo.Resp.") indica la clave del encargado de los mantenimientos del equipo.</p>
         <p class="tutorial-step">- Ejemplo: En este caso el puesto de trabajo encargado es ZM2I225, que en este caso es un inspector. </p>
-        <img id="pto_tjo_img" src="assets/placeholder.png" alt="" class="tutorial-img">
+        <img id="pto_tjo_img" src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-ptotjo.png?alt=media&token=38b0de32-0f17-45b4-af52-b8f75b7ad361" alt="" class="tutorial-img">
         <hr>
         <p class="tutorial-step">DATOS AVERÍA: Muestra los datos que se escribieron en el Aviso de Falla (M2 más antiguo)</p>
-        <img src="assets/placeholder.png" alt="" class="tutorial-img">
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-averia.png?alt=media&token=e0c787fc-2a93-47a8-a2ba-493b9749ad1d" alt="" class="tutorial-img">
         <p class="tutorial-step">1. Ingresar inicio y fin de la demora y su duración.</p>
         <p class="tutorial-step">2. Escribir la Parte del Equipo dañada, Síntoma que presentaba y la Causa aparente. Dentro de los campos de texto poner cualquier explicación extra necesarea.</p>
         <p class="tutorial-step">3. En el campo de "Ciclo", escribe el cíclo en el que se presentó la falla.</p>
@@ -61,15 +63,16 @@
         <p class="tutorial-step">4. En la tabla se indican los Avisos M2 asociados. Puede haber más de un reporte de demora, por la misma falla, por lo que se anexan todos los reportes (la suma de ellos puede sobrepasar el límite de minutos de demora que obliga a hacer un AFA)</p>
 
         <p class="tutorial-step">- Los botones que se ven son un lápiz, con él se puede modificar el aviso (por si falta información, o consideran que está equivocada) y una lupa, por si se quiere únicamente visualizar el aviso, o ver alguna imagen adjunta en él.</p>
-        <img id="botones-editar-lupa" src="assets/placeholder.png" alt="" class="tutorial-img">
+        <img id="botones-editar-lupa" src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/edit_view.png?alt=media&token=29940117-98b5-42c0-9833-e23e6b20d3dc" alt="" class="tutorial-img">
         <p class="tutorial-step nota-tutorial">*NOTA: Toda esta información, la precarga el sistema.</p>
 
         <hr>
         <p class="tutorial-step">SECUENCIA DE EVENTOS: En esta sección, se indica la cronología de acontecimientos de la Falla.</p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-secuencia.png?alt=media&token=cdb1d6cf-feb0-4f4e-84c1-2c5e64b26742" alt="" class="tutorial-img">
         <p class="tutorial-step">1. Se da clic en el botón verde para agregar un nuevo paso en la secuencia de eventos.</p>
-        <img src="assets/placeholder.png" alt="" class="tutorial-img">
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-agregar.png?alt=media&token=ba1e1049-e232-4a65-b9bd-16f234fcbadd" alt="" class="tutorial-img">
         <p class="tutorial-step">- En caso de querer borrar un paso, siempre se puede dar clic en el botón rojo de basura a la derecha de cada paso en la secuencia.</p>
-        <img src="assets/placeholder.png" alt="" class="tutorial-img">
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-borrar.png?alt=media&token=32aff06b-17c3-4f5c-a118-9012ebab8f96" alt="" class="tutorial-img">
         <p class="tutorial-step">2. En la sección de descripción se describe lo que sucedió en ese paso.</p>
         <p class="tutorial-step">3. En las secciones de inicio fin y duración se registran horarios tentativos (para justificar los tiempos que se demoraron en la falla).</p>
 
@@ -81,11 +84,13 @@
         <p class="tutorial-step">ANTECEDENTES: En esta sección, se listan actividades previas que pueden ser relevantes o relacionadas a la falla. Se comprende de varias sub-secciones</p>
         <p class="tutorial-step">1. Antecedentes de Fallas en el Equipo: Muestra los AFAS anteriores que se le hayan hecho al equipo.</p>
         <p class="tutorial-step">- Botón de Lápiz (editar), Lupa (visualizar el AFA anterior).</p>
-        <img src="assets/placeholder.png" alt="" class="tutorial-img">
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-antecedentes-2.png?alt=media&token=df47fb83-5db6-4e6e-a3f6-a77e44635140" alt="" class="tutorial-img">
         <p class="tutorial-step">2. Órdenes: Son Actividades de Mantenimiento que consideran relevantes para la falla.</p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-ordenes2.png?alt=media&token=69fa4b5b-715c-4801-a02b-dd180f808002" alt="" class="tutorial-img">
         <p class="tutorial-step">3. Avisos: Son Reportes de un funcionamiento extraño del equipo (ante un aviso, se crea una orden de trabajo).</p>
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-avisos2.png?alt=media&token=3eb200fb-362f-49d8-9f61-53dc24d2e17c" alt="" class="tutorial-img">
         <p class="tutorial-step">4. Planes: Son Rutinas de Inspecciones/Mantenimientos Preventivos que se le hacen a los equipos (Cambiar Filtros, Agregar Grasa/Aceite, Revisar Temperaturas).</p>
-        
+        <img src="https://firebasestorage.googleapis.com/v0/b/afa-helper.appspot.com/o/contexto-planes2.png?alt=media&token=3e32be1f-4c84-4fea-96f6-2ef0be0d6c5b" alt="" class="tutorial-img">
         <!-- <div class="d-flex flex-row justify-content-around">
           <a href="#"><i class="fas fa-arrow-left action-color"></i></a>
           <a href="#"><i class="fas fa-arrow-right action-color"></i></a>
