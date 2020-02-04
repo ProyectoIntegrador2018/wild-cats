@@ -1,9 +1,10 @@
 <div id="TerminosSidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <a href="#" class="home_btn"> <i class="fas fa-home action-color"></i></a>
     <h3 class="modal-title">Diccionario de Terminos</h3>
     <br>
     <input type="text" id="terminosInput" onkeyup="searchTerminos()" placeholder="Buscar..">
-    <br>    
+    <br>
     <div class="terminos">
 
         <div class="termino">
@@ -64,7 +65,7 @@
         var filter, terminos, i, txtValue;
         filter = $('#terminosInput').val().toUpperCase();
         terminos = $('.terminos .termino');
-    
+
         // Loop through all list items, and hide those who don't match the search query
         for (i = 0; i < terminos.length; i++) {
             txtValue = $(terminos[i]).text();

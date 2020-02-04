@@ -60,8 +60,12 @@ a.section_button {
 
 .menu-btn {
   color: white;
-  width: 100%;
-  margin: 2rem 1rem;
+  width: 80%;
+  margin: 3rem auto;
+}
+
+.menu-btn + .menu-btn {
+  margin-top: 0;
 }
 
 .progress_section {
@@ -226,12 +230,20 @@ input[type=text] + input[type=text] {
   color: #f1f1f1;
 }
 
-.sidenav .closebtn {
+.sidenav .closebtn{
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.sidenav .home_btn {
+  position: absolute;
+  top: 0;
+  padding-left: 8px;
+  margin-top: 0.75rem;
+  left: 25px;
 }
 
 p.tutorial-description {
@@ -317,7 +329,7 @@ a.color_eficacia.active {
 }
 
 .accordion:hover {
-  background-color: #a3a3a3; 
+  background-color: #a3a3a3;
 }
 
 .panel {
@@ -340,4 +352,3 @@ a.color_eficacia.active {
   border: 1px solid #ddd;
   margin-bottom: 12px;
 }
-

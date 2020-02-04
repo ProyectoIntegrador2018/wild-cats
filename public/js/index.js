@@ -122,3 +122,7 @@ $(document).on("click", "#FAQ_button", () => {
 $(document).on("click", "#FaqSidenav .closebtn", () => {
     actionNav("#FaqSidenav", "close")
 });
+
+$(document).on("click", ".sidenav .home_btn", () => {
+    actionNav("#mySidenav", "open")
+});
