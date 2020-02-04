@@ -8,13 +8,13 @@
   <h3 class="modal-title">Preguntas Frecuentes</h3>
   <br>
   <br>
+    <button class="accordion">1. ¿Quién es el responsable de ejecutar el proceso de AFA?</button>
+    <div class="panel">
+      <p>
+        Solo el líder GMB es el responsable.
+      </p>
+    </div>
 
-  <button class="accordion">1. ¿Quién es el responsable de ejecutar el proceso de AFA?</button>
-  <div class="panel">
-    <p>
-      Solo el líder GMB es el responsable.
-    </p>
-  </div>
 
   <button class="accordion">2. ¿En caso de requerirse se pueden generar Avisos M5 (IMAN)?</button>
   <div class="panel">
@@ -91,22 +91,5 @@
       aprobar el AFA.
     </p>
   </div>
-
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
-  </script>
 
 </div>
