@@ -114,3 +114,11 @@ $(document).on("click", "#TerminosSidenav .closebtn", () => {
 $(document).on("click", "#mySidenav #Tutorial_button", () => {
     actionNav("#context-sidebar", "open"), focusScrollMethod("#seccion-contexto")
 });
+
+$(document).on("click", "#FAQ_button", () => {
+    actionNav("#FaqSidenav", "open")
+});
+
+$(document).on("click", "#FaqSidenav .closebtn", () => {
+    actionNav("#FaqSidenav", "close")
+});
