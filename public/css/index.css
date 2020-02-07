@@ -59,9 +59,14 @@ a.section_button {
 
 
 .menu-btn {
-  color: white;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
   width: 80%;
-  margin: 3rem auto;
+  margin: 2.5rem auto;
+}
+
+.menu-btn:hover {
+  color: #25BA00;
 }
 
 .menu-btn + .menu-btn {
@@ -73,7 +78,7 @@ a.section_button {
 }
 
 .green {
-  background-color: #5FD800;
+  background-color: #25BA00;
 }
 
 .yellow {
@@ -81,8 +86,13 @@ a.section_button {
 }
 
 .action-color {
-  color: #5FD800;
+  color: #25BA00;
 }
+
+button:focus {
+  outline:0;
+}
+
 
 .help-btn {
   position: fixed;
